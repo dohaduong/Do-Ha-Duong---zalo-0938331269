@@ -1,0 +1,168 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 1213px;
+    height: 830px;
+    margin: 100px;
+}
+
+h1{
+    height: 64px;
+    width: 1013px;
+}
+
+.taskbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1013px;
+    height: 64px;
+    margin-bottom: 70px;
+
+}
+.taskbar .search {
+    padding: 16px;
+    width: 327px;
+    height: 64px;
+    border: 0.5px solid grey;
+    border-radius: 10px;
+
+    display: flex;
+    align-items: center;  
+    gap: 8px;
+}
+
+.taskbar .names{
+    display: flex;
+    align-items: flex-start;
+    width: 534px;
+    height: 56px;    
+}
+
+.taskbar .names .none{
+    padding: 16px;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.taskbar .names .color{
+    padding: 16px;
+    font-family: 'Poppins', sans-serif;
+    background-color: #7dade7;
+    color: white;
+    border-radius: 10px;
+}
+
+
+
+
+.taskbar .names{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+
+
+#searchbar{
+    border: none;
+    font-size: 16px;
+    width: 105px;
+    height: 24px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    line-height: 24px;
+}
+
+.list{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 16px;
+}
+
+.list .user{
+    display: flex;
+    /* flex-direction: column; */
+    align-items: flex-start;
+    /* justify-content: center; */
+    gap: 16px;
+    
+    padding: 24px;
+}
+
+.list .select{
+    border: 0.5px solid grey;
+    border-radius: 10px;
+    box-shadow: 0px 5px 5px grey;}
+
+.list .user .image img{
+    border-radius: 50%;
+}
+
+.list .user .info{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.list .user .info .des{
+    margin-bottom: 16px;
+}
+
+
+/* .list .user .info .des {
+    margin-bottom: 16px;
+} */
+
+.list .user .info .des .username{
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'Merriweather', serif;
+}
+
+.list .user .info .des{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px 0px 0px;
+    gap: 4px;
+    
+    width: 106px;
+    height: 68px;
+}
+
+.list .user .info .ability{
+    display: flex;
+    padding: 0px;
+    gap: 6px;
+    
+}
+
+.list .user .info .abi{
+    padding: 4px;
+    border: 0.5px solid grey;
+    border-radius: 20px;
+    color: blue;
+}
+
+.list .user .info .ability2{
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+    gap: 6px;
+    
+}
+
+
+.list .user .info .ability2 .abi2{
+    display: flex;
+    flex-direction: row;
+    padding: 0px;
+    gap: 6px;
+
+}
